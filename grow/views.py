@@ -15,22 +15,19 @@ import forms
 
 
 def index(request):
+    context = _get_user_context(request)
     department = Department.objects.all()
-    content = {
-        'departments': department
-    }
-    return render(request, 'departments.html', content)
+    context['departments'] = department
+    return render(request, 'departments.html', context)
 
 
 def department(request, id):
+    context = _get_user_context(request)
     department = Department.objects.get(id=int(id))
     employers = Employee.objects.filter(department_id=int(id))
-    
-    content = {
-        'department' : department,
-        'employers': employers
-    }
-    return render(request, 'single.html', content)
+    context['department'] = department
+    context['employers'] = employers
+    return render(request, 'single.html', context)
 
 def _get_user_context(request):
     context = {}

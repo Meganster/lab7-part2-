@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Articles on personal growth, entrepreneurship and psychology</title>
+    <title>Manage yours departments</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,12 +26,12 @@
             </div>
             {% if user_logged_in %}
                 <div class="col-md-1 menu-button">
-                    <p>Hello, {{ username }}</p>
+                    <a href=""><p>Hello, {{ username }}</p></a>
                 </div>
                 <div class="col-md-1 menu-button">
                     <a href="/logout/"><p>Log out</p></a>
                 </div>
-                {% else %}
+            {% else %}
                 <div class="col-md-1 menu-button">
                     <a href="/login/"><p>Sign in</p></a>
                 </div>
