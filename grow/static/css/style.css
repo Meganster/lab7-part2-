@@ -1,0 +1,79 @@
+body{
+    background-color: #ccc;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu{
+    background-color: #42f471;
+    -webkit-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.75);
+    position: relative;
+    float: top;
+}
+
+.menu h1{
+    margin: 10px;
+}
+
+.menu-button{
+    display: block;
+    color: #000000; 
+}
+
+.menu-button p{
+    margin: 0;
+    text-align: center;
+    align-self: center;
+}
+
+.menu-button a{
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: center;    
+    width: 100%;
+    height: 100%;
+    color: #000000; 
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.menu-button a:hover{
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+}
+
+.small-margin{
+    margin: 10px;
+    display: inline-block;
+}
+
+.article-body{
+    align-self: center;
+    width: 70%;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.75);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.article-body a{
+    text-decoration: none;
+    color: #000;
+}
+
+.error{
+    background-color: #ffb7bd;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 7px;
+}

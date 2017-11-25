@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <div class="article-body">
+                <h2>{{department.name}}</h2>
+                <p>{{department.about}}</p>
+        </div>
+
+        <div class="article-body">
+            <h2 style="text-align: center">Employers in this department</h2>
+        </div>
+        {% for employee in employers %}
+        <div class="article-body">
+            <h2>{{employee.firstName}} {{employee.lastName}}</h2>
+            <p>{{employee.about}}</p>
+        </div>
+        {% empty %}
+        <div class="article-body">
+            <p style="text-align: center">There is no employers yet</p>
+        </div>
+
+        {% endfor %}
+
+{% endblock %}

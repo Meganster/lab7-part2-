@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="article-body">
+    {% if success %}
+        <h2>
+            Вы вошли как {{username}}
+        </h2>
+    {% else %}
+        <h2>Что-то пошло не так...</h2>
+        <p>
+            Попробуйте авторизоваться ещё раз.
+        </p>
+    {% endif %}
+</div>
+
+{% endblock %}

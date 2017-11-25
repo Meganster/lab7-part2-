@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for department in departments %}
+        <div class="article-body">
+                <h2><a href="/departments/{{department.id}}" target="_blank">{{department.name}}</a></h2>
+                <p>{{department.about}}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
